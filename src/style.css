@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.topNav {
+    background: darkcyan;
+    width: 100%;
+    padding: 10px;
+}
+
+.topNav-text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.search-input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.search-input {
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid #d6d6d6;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.city {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 70px auto 20px;
+    cursor: pointer;
+}
+
+.city:nth-child(1){
+    margin-right: 0;
+}
+
+.city:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.5s ease;
+}
+
+.city-name {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+sup {
+    margin-left: 5px;
+}
+
+.city-temp {
+    font-size: 20px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.notFound{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.little-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.little-detail:nth-child(1){
+    margin-right: 40px;
+}
+
+.little-detail:nth-child(3){
+    margin-right: 40px;
+}
+
+.little-detail-text{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.little-detail-title{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .city{
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .city:nth-child(1){
+        margin-right: auto;
+    }
+    .search-input{
+        width: 50%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1000px){
+    .city:nth-child(1){
+        margin-right: auto;
+    }
+}
